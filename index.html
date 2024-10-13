@@ -2,10 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 100px;
+            height: auto;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 5px #b0afac;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="gallery" initial-scale=1.0>
+        <img src="../SchoolWebsite/im.jpeg" alt="Image 1">
+        <img src="../SchoolWebsite/im.jpeg" alt="Image 1">
+        <img src="../SchoolWebsite/im.jpeg" alt="Image 2">
+        <img src="../SchoolWebsite/im.jpeg" alt="Image 3">
+        <img src="../SchoolWebsite/im.jpeg" alt="Image 4">
+        <img src="../SchoolWebsite/im.jpeg" alt="Image 5">
+    </div>
     <title>Document</title>
 </head>
 <body>
-    <p>Added a text</p>
+    
 </body>
 </html>
